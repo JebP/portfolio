@@ -15,56 +15,66 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-This is an example of a portfolio that someone might assemble to demonstrate the skills they have developed in VIS 2128. I have created this page using RMarkdown. There are fancier tools out there for creating and hosting webpages, and you are welcome to use any of those if you like. The advantage of this approach is that you can create your webpage directly from RStudio.
+The following maps demonstrate skills developed during Spatial Analysis, Fall 2021. They range in content and geography, though each tells a story about difference across space. 
 
-This example uses the `downcute` theme, which is available if you install the `rmdformats` package. The themes in the `rmdformats` have a table of contents that only includes level-one headings.
+# Brooklyn
 
-Other themes in the `rmdformats` package are `material`, `html_clean`, `html_docco`, `readthedown`, and `robobook`.  
+## Interactive Map: Libraries and Whiteness
 
-Your portfolio should demonstrate each of the following skills (not all of which are demonstrated in this example):
+Brooklyn Public Library, in its ideal sense, is a democratic system of knowledge production and preservation. But how equitably are its branches distributed? Layering Census demographic information - white population in this case - shows us which people the libraries serve. From preliminary visual analysis, we see stark segregation, with Flatbush Avenue a dividing line between white populations and populations of color. The libraries, however, appear rather evenly distributed across the geography. 
 
+*Skills demonstrated:*
+
+* Displaying data on an interactive map
 * Displaying multiple vector layers on the same map
-* Calculating and displaying relationships among point and polygon layers based on distance
-* Aggregating point data to a layer of polygons
-* Calculating and displaying accessibility, based on travel time
-* Converting between raster layers and vector layers
-* Displaying raster data on a map
-* Georeferencing a raster image
-* Displaying data on an interactive map
-
-# Maps of Boston
-Here are two maps of Boston. I might include some text here about this set of maps.
-
-## Interactive Map
-This interactive map demonstrates the following skills: 
-
-* Displaying data on an interactive map
 
 [![](thumbnails/WhitenessAndLibraries.png)](https://jebp.github.io/portfolio/fullsize/WhitenessAndLibraries.html){target="_blank"}
 
-## Georeferenced Seoul
-This map demonstrates the following skills:
+# Seoul
 
+## Georeferenced Seoul, 1946-2021
+Combining georeferenced historical maps with contemporary geospatial data effectively narrates change over time. In this map, Seoul's building footprints show the extent and density of urban development. The built form has expanded dramatically since 1946, covering areas that were once forested. This development had implications for the river as well, whose footprint has changed with dredging and the overall conversion of ambiguous sandbar to either land or water.
+
+*Skills demonstrated:*
 * Georeferencing a raster image
+* Displaying multiple vector layers on the same map
 
 [![](thumbnails/SeoulMapFInal.png)](https://jebp.github.io/portfolio/fullsize/SeoulMapFInal.pdf){target="_blank"}
 
-# Maps of San Luis Obispo
-Here are two maps of San Luis Obispo, California. I might include some text here as well.
+# Boston
+Given Harvard's location and my desire to explore locally relevant datasets, the remaining maps focus on Boston. 
 
-## Isochrones
-This map shows isochrones based on transit travel times to the nearest supermarket. It demonstrates the following skills:
+## Isochrone Map: Supermarket Access
+This isochrone map shows transit travel time to the nearest supermarket, showing areas between 0 and 30 minutes. (Note that the data appear incomplete - some markets seem to be missing in central and southern Boston - which is a reminder of OpenStreetMap's limitations.) Nonetheless, the general pattern of strong food access in the denser parts of the city makes sense, and suggests that downtown is a food haven, while other areas may be closer to food deserts.
 
-* Displaying multiple vector layers on the same map
+*Skills demonstrated:*
 * Calculating and displaying accessibility, based on travel time
 
 [![](thumbnails/TransitToMarket.png)](https://jebp.github.io/portfolio/fullsize/TransitToMarket.pdf){target="_blank"}
 
-## Accessibility
-This map shows accessibility based on a distance-decay function of the walking time to the nearest transit stop. It demonstrates the following skills:
+## Accessibility Raster: Pedestrian Access to Transit
+Access to mobility is key to full participation in urban life. For many people, that means walking to a transit stop. This map assigns accessibility scores across Boston, using a distance-function of walking time to the closest transit stop. 
 
-* Displaying multiple vector layers on the same map
+*Skills demonstrated:*
 * Calculating and displaying accessibility, based on travel time
 * Displaying raster data on a map
 
+[![](thumbnails/Ped_Transit_Access.png)](https://jebp.github.io/portfolio/fullsize/Ped_Transit_Access.pdf){target="_blank"}
 
+## Point to Polygon Aggregation: Community Centers by Neighborhood
+While the two previous maps showed where Bostonians might purchase food and take transit, this one shows where they (especially youth) can hang out, find services, and play. Aggregating community center points to neighborhood polygons shows that Dorchester has the most community centers of any neighborhood, which makes sense given its large size. 
+
+*Skills demonstrated:*
+* Aggregating point data to a layer of polygons
+* Displaying multiple vector layers on the same map
+
+[![](thumbnails/CommCenter_Neighborhood.png)](https://jebp.github.io/portfolio/fullsize/CommCenter_Neighborhood.pdf){target="_blank"}
+
+## Distance Relationships: Hospitals by the Water
+Boston is known for its health institutions and waterways. How might the two be related? This map uses a polygon buffer to analyze which hospitals are within half a kilometer to from water, with potential implications being the treatment of boating injuries, the healing power of pleasant views, and the threat of flooding. 
+
+*Skills demonstrated:*
+* Calculating and displaying relationships among point and polygon layers based on distance
+* Displaying multiple vector layers on the same map
+
+[![](thumbnails/Hospitals_Water.png)](https://jebp.github.io/portfolio/fullsize/Hospitals_Water.pdf){target="_blank"}
