@@ -3,7 +3,10 @@ title: "Spatial Analysis Portfolio"
 author: "Jeb Polstein"
 date: "10/18/2021"
 output: 
-  rmdformats::html_clean
+   html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
