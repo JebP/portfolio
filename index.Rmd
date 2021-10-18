@@ -17,30 +17,33 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The following maps demonstrate skills developed during Spatial Analysis, Fall 2021. They range in content and geography, though each tells a story about difference across space. 
 
+
 # Brooklyn
 
 ## Interactive Map: Libraries and Whiteness
 
-Brooklyn Public Library, in its ideal sense, is a democratic system of knowledge production and preservation. But how equitably are its branches distributed? Layering Census demographic information - white population in this case - shows us which people the libraries serve. From preliminary visual analysis, we see stark segregation, with Flatbush Avenue a dividing line between white populations and populations of color. The libraries, however, appear rather evenly distributed across the geography. 
+Brooklyn Public Library, in its ideal sense, is a democratic system of knowledge production and preservation. But how equitably are its branches distributed? Layering in census demographic information - white population in this case - shows us which people the libraries serve. From preliminary visual analysis, we see stark segregation, with Flatbush Avenue a dividing line between white populations and populations of color. The libraries, however, appear rather evenly distributed across the geography. 
 
 *Skills demonstrated: Displaying data on an interactive map; Displaying multiple vector layers on the same map*
 
 [![](thumbnails/WhitenessAndLibraries.png)](https://jebp.github.io/portfolio/fullsize/WhitenessAndLibraries.html){target="_blank"}
 
+
 # Seoul
 
 ## Georeferenced Seoul, 1946-2021
-Combining georeferenced historical maps with contemporary geospatial data effectively narrates change over time. In this map, Seoul's building footprints show the extent and density of urban development. The built form has expanded dramatically since 1946, covering areas that were once forested. This development had implications for the river as well, whose footprint has changed with dredging and the overall conversion of ambiguous sandbar to either land or water.
+Combining georeferenced historical maps with contemporary geospatial data narrates change over time. In this map, Seoul's building footprints show the extent and density of urban development. The built form has expanded dramatically since 1946, covering areas that were once forested. This development had implications for the river as well, whose footprint has changed with dredging and the overall conversion of ambiguous sandbar to either land or water.
 
 *Skills demonstrated: Georeferencing a raster image; Displaying multiple vector layers on the same map*
 
 [![](thumbnails/SeoulMapFInal.png)](https://jebp.github.io/portfolio/fullsize/SeoulMapFInal.pdf){target="_blank"}
 
+
 # Boston
 Given Harvard's location and my desire to explore locally relevant datasets, the remaining maps focus on Boston. 
 
 ## Isochrone Map: Supermarket Access
-This isochrone map shows transit travel time to the nearest supermarket, showing areas between 0 and 30 minutes. (Note that the data appear incomplete - some markets seem to be missing in central and southern Boston - which is a reminder of OpenStreetMap's limitations.) Nonetheless, the general pattern of strong food access in the denser parts of the city makes sense, and suggests that downtown is a food haven, while other areas may be closer to food deserts.
+This isochrone map shows transit travel time to the nearest supermarket, limited to areas within 30 minutes. (Note that the data appear incomplete - some markets seem to be missing in central and southern Boston - which is a reminder of OpenStreetMap's limitations.) Nonetheless, the general pattern of strong food access in the denser parts of the city makes sense, and suggests that downtown is a food haven, while other areas may be closer to food deserts.
 
 *Skills demonstrated: Calculating and displaying accessibility, based on travel time*
 
